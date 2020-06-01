@@ -21,13 +21,30 @@ namespace Prototipos
     public partial class MainWindow : Window
     {
 
+        private string usuario;
+        private string contras;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        public bool getUsersInfo()
+        {
+            //Conexión a base de datos.
+            return false;
+        }
+
         private void Btn_inicio_Click(object sender, RoutedEventArgs e)
         {
+            this.usuario = txt_usuario.Text;
+            this.contras = txt_contra.Password.ToString();
+
+            if ()
+            {
+
+            }
+
             Menu menu = new Menu(this);
             menu.Show();
             this.Hide();
